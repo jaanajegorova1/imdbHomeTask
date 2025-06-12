@@ -5,6 +5,7 @@ import org.testng.Assert;
 import pages.MoviePage;
 
 import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Condition.visible;
 
 public class MoviePageSteps {
 
@@ -27,9 +28,10 @@ public class MoviePageSteps {
         }
     }
 
-//    @And("I click on 3rd profile of actor")
-//    public void selectThirdProfileOfActors(String thirdActorName) {
-//        Assert.assertEquals(moviePage.thirdActorName().should(exist).getText(), thirdActorName);
-//    }
+    @And("I click on 3rd profile")
+    public void selectThirdProfileOfActors() {
+       // moviePage.thirdActorName().should(exist).getText();
+         moviePage.thirdActorName().scrollTo().shouldBe(visible).click();
+    }
 }
 

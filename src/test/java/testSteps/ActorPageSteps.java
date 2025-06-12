@@ -13,14 +13,8 @@ public class ActorPageSteps {
         this.actorPage = actorPage;
     }
 
-    @And("I click on 3rd profile of actor")
-    public void selectThirdProfileOfActors(String thirdActorName) {
-        Assert.assertEquals(actorPage.thirdActorName().should(exist).getText(), thirdActorName);
+    @And("I verify, that {} profile is opened")
+    public void printThirdActorName(String thirdActorName) {
+        Assert.assertEquals(actorPage.actorName().should(exist).getText(), thirdActorName);
     }
-
-    @And("I verify the correct profile have opened")
-    public void printThirdActorName(String actorName) {
-        Assert.assertEquals(actorPage.thirdActorName().should(exist).getText(), actorName);
-    }
-
 }

@@ -7,5 +7,5 @@ Feature: Search
     And I click on the first movie in the list
     Then Movie Stranger Things page is opened
     And 7 names from top cast list is printed to console
-    When I click on 3rd profile of actor
-    Then I verify the correct profile have opened
+    When I click on 3rd profile
+    Then I verify, that Winona Ryder profile is opened

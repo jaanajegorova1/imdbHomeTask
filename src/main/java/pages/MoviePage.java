@@ -17,9 +17,7 @@ public class MoviePage {
         return $$(By.xpath("//a[@data-testid='title-cast-item__actor']"));
     }
 
-//    public SelenideElement thirdActorName() {
-//        return $(By.xpath("//a[@data-testid='title-cast-item__actor'][3]"));
-//    }
-
+    public SelenideElement thirdActorName() {
+        return $(By.xpath("(//a[@data-testid='title-cast-item__actor'])[3]"));
+    }
 }
-
