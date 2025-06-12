@@ -30,7 +30,6 @@ public class MoviePageSteps {
 
     @And("I click on 3rd profile")
     public void selectThirdProfileOfActors() {
-       // moviePage.thirdActorName().should(exist).getText();
          moviePage.thirdActorName().scrollTo().shouldBe(visible).click();
     }
 }
