@@ -12,12 +12,13 @@ public class EnvironmentConfig {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +        "(KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36");
 
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 10000;
         Configuration.browserCapabilities = options;
-
+        Configuration.headless = true;
         open(URL.BASELINK);
     }
 
