@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-        tags= "@HomeTask",
+        tags = "@HomeTask",
         features = "src/test/resources/features",
         glue = "testSteps",
         plugin = {

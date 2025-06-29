@@ -16,7 +16,7 @@ public class MainPageSteps {
 
     @When("I accept cookie banner")
     public void acceptCookieBanner() {
-        if(mainPage.cookieBanner().exists() && mainPage.cookieBanner().isDisplayed()) {
+        if (mainPage.cookieBanner().exists() && mainPage.cookieBanner().isDisplayed()) {
             mainPage.cookieBannerAcceptButton().shouldBe(visible).click();
         } else {
             System.out.println("Cookie banner is not visible on main page");

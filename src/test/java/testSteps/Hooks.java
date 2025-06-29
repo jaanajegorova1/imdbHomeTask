@@ -14,7 +14,7 @@ public class Hooks {
     private final EnvironmentConfig environment;
 
 
-    public Hooks (EnvironmentConfig environment) {
+    public Hooks(EnvironmentConfig environment) {
         this.environment = environment;
     }
 

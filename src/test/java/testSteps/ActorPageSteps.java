@@ -5,6 +5,7 @@ import org.testng.Assert;
 import pages.ActorPage;
 
 import static com.codeborne.selenide.Condition.exist;
+
 public class ActorPageSteps {
 
     private final ActorPage actorPage;
